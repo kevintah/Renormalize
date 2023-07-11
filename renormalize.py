@@ -15,6 +15,7 @@ phi = sp.Function(chr(0x03C6))(x,t)
 dalembertian_symbol = sp.Symbol(chr(0x25A1))
 integral_symbol = sp.Symbol(chr(8747))
 kronecker_delta_symbol = sp.Symbol(chr(0x03B4))
+sumation_symbol = sp.Symbol(chr(8721))
 
 xshift = x-y
 tshift = t-y
@@ -55,7 +56,17 @@ fourierTransformedOperatorEquationCompled = str(integral_symbol)+'1/'+str(math.p
 read_Off_D_k =  1/ (math.sqrt(math.pi))**2  * 1/(-k**2 + m**2)
 fourier_transformed_read_Off_D_k = str(integral_symbol)+ 'dk'+str(1/math.pi**2)+ '*'+ str( sp.exp(- sp.I *k*x)) + str(1/ (math.sqrt(math.pi))**2  * 1/(-k**2 + m**2))
 D_x = fourier_transformed_read_Off_D_k
+
+#Interaction form
+interactionForm = '('+str(dalembertian_symbol - m**2)+')'+ '*' + str(phi)+'_n'+ '='+ str(sumation_symbol)+'_(k,l,m)'+ '*'+ str(phi)+'_k''*'+ str(phi)+'_l''*'+ str(phi)+'_m'
+# k + l + m + 1 = n
+
+
 print(D_x)
+print(interactionForm)
+
+
+
 
 
 
