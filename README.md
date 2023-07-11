@@ -3,8 +3,11 @@ A Python code to renormalize, and also do renormalization group flow symbolicall
 
 My goals
 
-Implement the propagator symbolically
-Implement interactions
-Implement renormalization by counter terms 
-Implement Callan-Symanzick in Python for ϕ4
+-Implement the propagator symbolically
+
+-Implement interactions
+
+-Implement renormalization by counterterms
+
+-Implement Callan-Symanzick in Python for ϕ4
 
